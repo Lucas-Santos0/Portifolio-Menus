@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+
+<head>
+	<title> cadastro de alunos</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style/estilo.css">
+	<script language="javascript" type="text/javascript">
+		function validar() {
+			var nome = form1.nome.value;
+			var turma = form1.turma.value;
+			var email = form1.email.value;
+
+			if (nome == "") {
+				alert('por favor, preencha o campo com o nome do Aluno completo!!');
+				form1.nome.focus();
+				return false;
+			}
+
+			if (turma == "") {
+				alert('por favor, preencha o campo com a turma do aluno!!');
+				form1.turma.focus();
+				return false;
+			}
+
+			if (email == "") {
+				alert('por favor, preencha o campo com o email escolar do aluno!!');
+				form1.email.focus();
+				return false;
+			}
+		}
+	</script>
+</head>
+
+<body bgcolor="lightgreen">
+	<br><br><br>
+	<center>
+		<table>
+			<tr>
+				<td><a href="Portifolio2.html">
+						<h1>Home</h1>
+				<td>
+				<td>
+				<td>
+				<td>
+				<td>
+				<td><a href="clientes-forms2.html">
+						<h1>Clientes</h1>
+				</td>
+				<td>
+				<td>
+				<td>
+				<td>
+				<td><a href="pacientes-forms2.html">
+						<h1>Paciente</td>
+				<td>
+				<td>
+				<td>
+				<td>
+				<td><a href="alunos-forms2.html">
+						<h1>Aluno</td>
+				<td>
+				<td>
+				<td>
+				<td>
+				<td><a href="produtos-forms2.html">
+						<h1>Produto</td>
+				<td>
+				<td>
+				<td>
+				<td>
+				<td><a href="funcionario-forms2.html">
+						<h1>Funcionário</td>
+			</tr>
+		</table>
+	</center><br>
+	<center><br>
+		<center>
+			<h1>Cadastro de Alunos</h1>
+		</center><br><br>
+		<form name="form1" action="Aviso-Alunos.html" method="post">
+			Nome do Aluno<input type="text" name="nome"><br /><br />
+			Ano escolar <input type="number" name="ano"><br /><br />
+			turma <input type="text" name="turma"><br /><br />
+			RM <input type="number" name="RM"><br /><br />
+			email escolar <input type="text" name="email"><br /><br />
+			<textarea cols="50" rows="15" name="comentario"> Obs...</textarea><br><br><br>
+			<input type="submit" onclick="return validar()" value="Enviar">
+			<input type="reset" name="limpa" value="Limpar">
+		</form>
+	</center>
+	<hr>
+	<center>
+		<h5> Lucas Santos 2023 - &copyTodos os direitos reservados</h5>
+	</center>
+</body>
+
+</html>

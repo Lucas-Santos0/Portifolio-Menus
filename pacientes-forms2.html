@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+
+<head>
+	<title> cadastro de pacientes2023</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style/estilo.css">
+	<script language="javascript" type="text/javascript">
+		function validar() {
+			var nome = form1.nome.value;
+			var email = form1.email.value;
+			var telefone = form1.telefone.value;
+			var endereço = form1.endereço.value;
+
+			if (nome == "") {
+				alert('por favor, preencha o campo com seu nome!!');
+				form1.nome.focus();
+				return false;
+			}
+
+			if (email == "") {
+				alert('por favor, preencha o campo com seu email!!');
+				form1.email.focus();
+				return false;
+			}
+
+			if (telefone == "") {
+				alert('por favor, preencha o campo com seu telefone!!');
+				form1.telefone.focus();
+				return false;
+			}
+
+			if (endereço == "") {
+				alert('por favor, coloque seu endereço!!');
+				form1.endereço.focus();
+				return false;
+			}
+
+			if (nome.length < 5) {
+				alert('por favor, preencha o campo com seu nome completo!!');
+				form1.nome.focus();
+				return false;
+
+			}
+		}
+	</script>
+</head>
+
+<body bgcolor="lightblue">
+	<br><br><br>
+	<center>
+		<table>
+			<tr>
+				<td><a href="Portifolio2.html">
+						<h1>Home</h1>
+				<td>
+				<td>
+				<td>
+				<td>
+				<td>
+				<td><a href="clientes-forms2.html">
+						<h1>Clientes</h1>
+				</td>
+				<td>
+				<td>
+				<td>
+				<td>
+				<td><a href="pacientes-forms2.html">
+						<h1>Paciente</td>
+				<td>
+				<td>
+				<td>
+				<td>
+				<td><a href="alunos-forms2.html">
+						<h1>Aluno</td>
+				<td>
+				<td>
+				<td>
+				<td>
+				<td><a href="produtos-forms2.html">
+						<h1>Produto</td>
+				<td>
+				<td>
+				<td>
+				<td>
+				<td><a href="funcionario-forms2.html">
+						<h1>Funcionário</td>
+			</tr>
+		</table>
+	</center><br>
+	<center><br>
+		<center>
+			<h1>Cadastro de Pacientes</h1>
+		</center><br><br>
+		<form name="form1" action="Aviso-pacientes.html" method="post">
+			Nome <input type="text" name="nome"><br /><br />
+			E-mail <input type="text" name="email"><br /><br />
+			telefone <input type="number" name="telefone"><br /><br />
+			Endereço <input type="text" name="endereço"><br /><br />
+			consultar <select name="consulta">
+				<option> </option>
+				<option> Dentista</option>
+				<option> Pediatra</option>
+				<option> Fisioterapielta</option>
+				<option> Ortopedista</option>
+				<option> Cardiologista</option>
+				<option> Demartologista</option>
+				<option> Ginecologisa</option>
+				<option> Urologista</option>
+				<option> Psiquiatra</option>
+				<option> Psicólogo</option>
+			</select><br><br>
+			<textarea cols="50" rows="15" name="comentario"> Obs...</textarea><br><br><br>
+			<input type="submit" onclick="return validar()" value="Enviar">
+			<input type="reset" name="limpa" value="Limpar">
+		</form>
+	</center>
+	<hr>
+	<center>
+		<h5> Lucas Santos 2023 - &copyTodos os direitos reservados</h5>
+	</center>
+</body>
+
+</html>

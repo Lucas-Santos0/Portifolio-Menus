@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+	<head> 
+		<title> cadastro de produtos</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style/estilo.css">
+		<script language="javascript" type="text/javascript">
+		function validar(){
+		var nome = form1.nome.value;
+		var local = form1.local.value;
+		
+		if (nome == ""){
+		alert('por favor, preencha o campo com o nome do produto!!');
+		form1.nome.focus();
+		return false;
+		}
+	
+		if (local == ""){
+		alert('por favor, preencha o campo com o endereço da loja onde o produto foi comprado!!');
+		form1.local.focus();
+		return false;
+		}		
+	}
+		</script>
+	</head>
+	<body bgcolor="lightpink">
+		<br><br><br>
+		<center><table>
+		<tr>
+		<td><a href="Portifolio2.html"><h1>Home</h1><td>
+		<td><td>
+		<td><td>
+		<td><a href="clientes-forms2.html"><h1>Clientes</h1></td>
+		<td><td>
+		<td><td>
+		<td><a href="pacientes-forms2.html"><h1>Paciente</td>
+		<td><td>
+		<td><td>
+		<td><a href="alunos-forms2.html"><h1>Aluno</td>
+		<td><td>
+		<td><td>
+		<td><a href="produtos-forms2.html"><h1>Produto</td>
+		<td><td>
+		<td><td>
+		<td><a href="funcionario-forms2.html"><h1>Funcionário</td>
+		</tr>
+		</table></center><br>
+		<center><br><center><h1>Cadastro de Produtos</h1></center><br><br>
+			<form name="form1" action="Aviso-produtos.html" method="post">
+				Nome do produto<input type="text" name="nome"><br/><br/>
+				codigo do produto <input type="number" name="codigo"><br/><br/>
+				data da compra <input type="date" name="data"><br/><br/>
+				local da compra <input type="text" name="local"><br/><br/>
+				quantidade <input type="number" name="quantidade" ><br/><br/>
+			<textarea cols="50" rows="15" name="comentario"> Obs...</textarea><br><br><br>
+			<input type="submit" onclick="return validar()" value="Enviar">
+			<input type="reset" name="limpa" value="Limpar">
+		</form></center>
+		<hr>
+		<center><h5> Lucas Santos 2023 - &copyTodos os direitos reservados</h5></center>
+	</body>
+</html>
